@@ -21,18 +21,18 @@ function logic(userResponse)
 {
    switch(userResponse)
    {
-   case 1:
-   const url = readLineSync.question('Please enter the url to be encoded\n');
-   console.log(base64Encode(url));
-   break;
+       case 1:
+          const url = readLineSync.question('Please enter the url to be encoded\n');
+          console.log(base64Encode(url));
+          break;
 
-   case 2:
-   const base64code = readLineSync.question('Please enter the Base64 code to be decoded\n');
-   console.log(base64Decode(base64code));
-   break;
+       case 2:
+          const base64code = readLineSync.question('Please enter the Base64 code to be decoded\n');
+          console.log(base64Decode(base64code));
+          break;
 
-   default:
-   console.log('Invalid URL');
-   break;
+       default:
+          console.log('Invalid URL');
+          break;
    }
 }
